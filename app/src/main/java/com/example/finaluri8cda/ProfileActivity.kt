@@ -79,6 +79,10 @@ class ProfileActivity : AppCompatActivity() {
             val userInfo =UserInfo(fullName, url)
             db.child(auth.currentUser?.uid!!).setValue(userInfo)
         }
+        buttonPlay.setOnClickListener {
+            startActivity(Intent(this, GameActivity::class.java))
+            finish()
+        }
     }
 
 }
