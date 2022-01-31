@@ -23,6 +23,11 @@ class ProfileActivity : AppCompatActivity() {
     private lateinit var buttonSave: Button
     private lateinit var buttonLogout: Button
     private lateinit var buttonPlay: Button
+    private lateinit var imageView2 : ImageView
+    private lateinit var textView2 : TextView
+    private lateinit var editTextUrl2 : EditText
+    private lateinit var editTextPersonName2 : EditText
+    private lateinit var buttonPlay2 : Button
 
     private val auth = FirebaseAuth.getInstance()
     private val db = FirebaseDatabase.getInstance().getReference("UserInfo")
@@ -63,6 +68,12 @@ class ProfileActivity : AppCompatActivity() {
         buttonSave = findViewById(R.id.buttonSave)
         buttonLogout = findViewById(R.id.buttonLogout)
         buttonPlay = findViewById(R.id.buttonPlay)
+        imageView2 = findViewById(R.id.imageView2)
+        textView2 = findViewById(R.id.textView2)
+        editTextUrl2 = findViewById(R.id.editTextUrl)
+        editTextPersonName2 = findViewById(R.id.editTextTextPersonName2)
+        buttonPlay2 = findViewById(R.id.buttonPlay2)
+
     }
 
     private fun registerListeners() {
@@ -81,6 +92,10 @@ class ProfileActivity : AppCompatActivity() {
         }
         buttonPlay.setOnClickListener {
             startActivity(Intent(this, GameActivity::class.java))
+            finish()
+        }
+        buttonPlay2.setOnClickListener{
+            startActivity(Intent(this, GameActivity2::class.java))
             finish()
         }
     }

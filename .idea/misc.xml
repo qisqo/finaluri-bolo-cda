@@ -3,9 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/User/AndroidStudioProjects/FINALURI8CDA/app/src/main/res/layout/activity_choose.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/User/AndroidStudioProjects/FINALURI8CDA/app/src/main/res/layout/activity_game.xml" value="0.2" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/FINALURI8CDA/app/src/main/res/layout/activity_game2.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/FINALURI8CDA/app/src/main/res/layout/activity_liked.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/FINALURI8CDA/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/User/AndroidStudioProjects/FINALURI8CDA/app/src/main/res/layout/activity_profile.xml" value="0.264" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/FINALURI8CDA/app/src/main/res/layout/activity_register_actvity.xml" value="0.1" />
       </map>
     </option>
   </component>

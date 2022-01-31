@@ -151,6 +151,7 @@ class GameActivity : AppCompatActivity(), View.OnClickListener {
 
         if (winnerPlayer == 1) {
             Toast.makeText(this, "1", Toast.LENGTH_SHORT).show()
+            
         }else if (winnerPlayer == 2) {
             Toast.makeText(this, "2", Toast.LENGTH_SHORT).show()
         }

@@ -4,48 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="#FFEB3B">
-
+    tools:context=".ChooseActivity">
 
     <LinearLayout
-        android:background="#A1FF5722"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="parent">
 
-        <EditText
-            android:id="@+id/editTextEmail"
+        <TextView
+            android:id="@+id/ChooseGames"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="E-mail"
-            android:inputType="textEmailAddress" />
-
-        <EditText
-            android:id="@+id/editTextPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="password"
-            android:inputType="textPassword" />
+            android:text="Choose"
+            android:textSize="50sp"
+            android:textAlignment="center"/>
 
         <Button
-            android:id="@+id/buttonLogin"
-            android:background="#03A9F4"
+            android:id="@+id/buttonMyGames"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="login" />
+            android:text="Games Created by me" />
 
         <Button
-            android:id="@+id/buttonRegister"
+            android:id="@+id/buttonLikedGames"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="register" />
+            android:text="Best Games IMO" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

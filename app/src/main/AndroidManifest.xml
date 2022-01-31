@@ -12,6 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FINALURI8CDA">
         <activity
+            android:name=".LikedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GameActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".MyGamesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChooseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActvity"
+            android:exported="false" />
+        <activity
             android:name=".GameActivity"
             android:exported="false" />
         <activity

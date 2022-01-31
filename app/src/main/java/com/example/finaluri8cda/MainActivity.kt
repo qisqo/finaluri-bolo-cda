@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var emailEditText: EditText
     private lateinit var passwordEditText: EditText
     private lateinit var loginButton: Button
+    private lateinit var buttonRegister: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -23,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         emailEditText = findViewById(R.id.editTextEmail)
         passwordEditText = findViewById(R.id.editTextPassword)
         loginButton = findViewById(R.id.buttonLogin)
+        buttonRegister = findViewById(R.id.buttonRegister)
     }
 
     private fun registerListeners() {
@@ -34,7 +36,7 @@ class MainActivity : AppCompatActivity() {
                 .signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener { task ->
                     if (task.isSuccessful) {
-                        startActivity(Intent(this, ProfileActivity::class.java))
+                        startActivity(Intent(this, ChooseActivity::class.java))
                         finish()
 
                     }else {
@@ -42,5 +44,12 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
         }
+        buttonRegister.setOnClickListener{
+            val intent = Intent(this, RegisterActvity::class.java)
+            startActivity(intent)
+        }
+
     }
+
+
 }
